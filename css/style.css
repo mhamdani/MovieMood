@@ -316,23 +316,40 @@ body {
       margin-left: 30px;
       margin-right: 30px;
       border-radius: 10px; }
-      body .mainContainer .container .genreBtn {
-        background-color: black;
+
+      body .mainContainer .container .genreBtn{
+        /*background-color: black;*/
         height: 8vw;
         width: 100%;
         margin-bottom: 5px;
         font-size: 1.1rem;
         display: -webkit-box;
         display: -ms-flexbox;
-        box-sizing: border-box;
+        box-sizing: border-box;*/
         background-repeat: no-repeat;
         background-size: cover;
         color: white; }
+
         body .mainContainer .container .genreBtn span {
-          background-color: rgba(0, 0, 0, 0.6);
-          padding: 5px;
+          /*background-color: rgba(0, 0, 0, 0.6);*/
+          position: relative;
+          font-size: 1rem;
+          text-align: center;
+letter-spacing: .5px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  height: 54px;
+line-height: 54px;
           display: block;
           max-width: 80%; }
+
       body .mainContainer .container .genreBtnMobile {
         background-color: black;
         height: 150px;
@@ -352,7 +369,6 @@ body {
           margin-left: 20px;
           padding: 10px; }
       body .mainContainer .container .genreBtn:hover {
-        border: 1px solid white;
         color: hotpink; }
       body .mainContainer .container .horrorBtn {
         background-image: url("../images/buttonback.jpg"); }
@@ -500,7 +516,6 @@ h4,
 body .mainContainer .container .genreBtn {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
   text-align: center;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
@@ -508,8 +523,6 @@ body .mainContainer .container .genreBtn {
   font-size: 1rem;
   outline: 0;
   text-decoration: none;
-color: #fff;
-background-color: #26a69a;
 text-align: center;
 letter-spacing: .5px;
 -webkit-transition: .2s ease-out;
