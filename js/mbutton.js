@@ -11678,74 +11678,74 @@ document.addEventListener("DOMContentLoaded", function () {
                             )
                         )
                     ),
-                    _react2.default.createElement(
-                        MediaQuery,
-                        { minDeviceWidth: 768 },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'containerCenter floatLeft' },
-                            _react2.default.createElement(
-                                'h1',
-                                { className: 'title' },
-                                this.state.title
-                            ),
-                            _react2.default.createElement('div', { className: 'poster', style: {
-                                    backgroundImage: 'url(' + this.state.poster + ')'
-                                } }),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'description' },
-                                this.state.description
-                            ),
-                            _react2.default.createElement(
-                                'h4',
-                                { className: 'genre' },
-                                'MovieMood: ',
-                                this.state.genres
-                            ),
-                            _react2.default.createElement(
-                                'h4',
-                                { className: 'rating' },
-                                'Rating:\xA0',
-                                _react2.default.createElement(
-                                    'span',
-                                    { style: {
-                                            color: this.state.color
-                                        } },
-                                    this.state.rating,
-                                    '/10\xA0'
-                                ),
-                                '(',
-                                'average votes)'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'youtube', style: {
-                                        display: this.state.display
-                                    } },
-                                _react2.default.createElement('iframe', { id: 'VideoPlayer', width: '700', height: '350', src: '', frameBorder: '0', allowFullScreen: 'true' }),
-                                _react2.default.createElement('div', { onClick: this.handleClickClose.bind(this), className: 'close' })
-                            ),
-                            _react2.default.createElement(
-                                'h4',
-                                { className: 'releaseDate' },
-                                'Release date: ',
-                                this.state.releaseDate
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'Watch Trailer'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { style: {
-                                        flexDirection: "row"
-                                    } },
-                                _react2.default.createElement('img', { className: 'nextButton', src: 'images/next.png', onClick: this.handleClickRoll.bind(this) })
-                            )
-                        )
-                    ),
+                    // _react2.default.createElement(
+                    //     MediaQuery,
+                    //     { minDeviceWidth: 768 },
+                    //     _react2.default.createElement(
+                    //         'div',
+                    //         { className: 'containerCenter floatLeft' },
+                    //         _react2.default.createElement(
+                    //             'h1',
+                    //             { className: 'title' },
+                    //             this.state.title
+                    //         ),
+                    //         _react2.default.createElement('div', { className: 'poster', style: {
+                    //                 backgroundImage: 'url(' + this.state.poster + ')'
+                    //             } }),
+                    //         _react2.default.createElement(
+                    //             'p',
+                    //             { className: 'description' },
+                    //             this.state.description
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'h4',
+                    //             { className: 'genre' },
+                    //             'MovieMood: ',
+                    //             this.state.genres
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'h4',
+                    //             { className: 'rating' },
+                    //             'Rating:\xA0',
+                    //             _react2.default.createElement(
+                    //                 'span',
+                    //                 { style: {
+                    //                         color: this.state.color
+                    //                     } },
+                    //                 this.state.rating,
+                    //                 '/10\xA0'
+                    //             ),
+                    //             '(',
+                    //             'average votes)'
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'div',
+                    //             { className: 'youtube', style: {
+                    //                     display: this.state.display
+                    //                 } },
+                    //             _react2.default.createElement('iframe', { id: 'VideoPlayer', width: '700', height: '350', src: '', frameBorder: '0', allowFullScreen: 'true' }),
+                    //             _react2.default.createElement('div', { onClick: this.handleClickClose.bind(this), className: 'close' })
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'h4',
+                    //             { className: 'releaseDate' },
+                    //             'Release date: ',
+                    //             this.state.releaseDate
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'button',
+                    //             { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
+                    //             'Watch Trailer'
+                    //         ),
+                    //         _react2.default.createElement(
+                    //             'div',
+                    //             { style: {
+                    //                     flexDirection: "row"
+                    //                 } },
+                    //             _react2.default.createElement('img', { className: 'nextButton', src: 'images/next.png', onClick: this.handleClickRoll.bind(this) })
+                    //         )
+                    //     )
+                    // ),
                     _react2.default.createElement(
                         MediaQuery,
                         { maxDeviceWidth: 767 },
@@ -12244,7 +12244,75 @@ document.addEventListener("DOMContentLoaded", function () {
                                 )
                             )
                         )
-                    )
+                    ),
+                    _react2.default.createElement(
+                        MediaQuery,
+                        { minDeviceWidth: 768 },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'containerCenter floatLeft' },
+                            _react2.default.createElement(
+                                'h1',
+                                { className: 'title' },
+                                this.state.title
+                            ),
+                            _react2.default.createElement('div', { className: 'poster', style: {
+                                    backgroundImage: 'url(' + this.state.poster + ')'
+                                } }),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'description' },
+                                this.state.description
+                            ),
+                            _react2.default.createElement(
+                                'h4',
+                                { className: 'genre' },
+                                'MovieMood: ',
+                                this.state.genres
+                            ),
+                            _react2.default.createElement(
+                                'h4',
+                                { className: 'rating' },
+                                'Rating:\xA0',
+                                _react2.default.createElement(
+                                    'span',
+                                    { style: {
+                                            color: this.state.color
+                                        } },
+                                    this.state.rating,
+                                    '/10\xA0'
+                                ),
+                                '(',
+                                'average votes)'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'youtube', style: {
+                                        display: this.state.display
+                                    } },
+                                _react2.default.createElement('iframe', { id: 'VideoPlayer', width: '700', height: '350', src: '', frameBorder: '0', allowFullScreen: 'true' }),
+                                _react2.default.createElement('div', { onClick: this.handleClickClose.bind(this), className: 'close' })
+                            ),
+                            _react2.default.createElement(
+                                'h4',
+                                { className: 'releaseDate' },
+                                'Release date: ',
+                                this.state.releaseDate
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
+                                'Watch Trailer'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { style: {
+                                        flexDirection: "row"
+                                    } },
+                                _react2.default.createElement('img', { className: 'nextButton', src: 'images/next.png', onClick: this.handleClickRoll.bind(this) })
+                            )
+                        )
+                    ),
                 );
             }
         }]);
