@@ -15,6 +15,13 @@ $(document).ready(function() {
     }
   }).done(function(response) {
     console.log(response);
-    var results = response;
+
+    for (var i = 0; i < 5; i++) {
+      var dining = $("<div>");
+      console.log(response.restaurants[i].restaurant.name);
+      var nameRest = response.restaurants[i].restaurant.name;
+      dining.html("<h4>" + nameRest + "</h4>");
+      $("#dinner-suggestions").append(dining);
+    }
   });
 });
