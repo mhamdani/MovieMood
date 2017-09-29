@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MovieMood</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">MovieMood</a>
+<!-- STELLA LOGIN SECTION START -->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Get movie recommendations</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">click on a mood button to generate your movie recommendation</h5>
+        </div>
+        <div class="row center">
+          <div id="app"></div>
+          <p>
+          <a href="#" id="happy" class="btn-large waves-effect waves-light teal lighten-1">Happy</a>
+          <a href="#" id="emotional" class="btn-large waves-effect waves-light teal lighten-1">Emotional</a>
+          <a href="#" id="romantic" class="btn-large waves-effect waves-light teal lighten-1">Romantic</a>
+          <a href="#" id="thrilling" class="btn-large waves-effect waves-light teal lighten-1">Thrilling</a>
+          <a href="#" id="goofy" class="btn-large waves-effect waves-light teal lighten-1">Goofy</a>
+          <a href="#" id="powerful" class="btn-large waves-effect waves-light teal lighten-1">Powerful</a>
+
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="search_backdrop.png" alt="Unsplashed background img 1"></div>
+  </div><br><br>
+
+
+  <div class="container" id="more-suggestions">
+  <h4>More movie suggestions:</h4>
+  </div>
+
+      <!--   Icon Section   -->
+      <div class="row" id="movie-posters">
+      <div class="movieInfo" id="dynamicInputs"></div>
+        </div>
+    </div>
+  </div><br><br><br>
+
+
+  <!-- <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+  <div class="container">
+    <div class="section" id="contactp">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.  Curae;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="camera_banner.jpg" alt="Unsplashed background img 3"></div>
+  </div> -->
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Team Bio</h5>
+          <p class="grey-text text-lighten-4">
+          Michelle Hamdani<br>
+          Adham Bishr<br>
+          Stella U</p>
+
+
+        </div>
+        <div class="col l3 s12">
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/mhamdani"><p class="grey-text text-lighten-4">
+            Michelle's GitHub</a><br>
+            <a class="white-text" href="https://github.com/abishr12">Adham's GitHub</a><br>
+            <a class="white-text" href="https://github.com/ulaiwa">Stella's GitHub</a></p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      UCB Bootcamp <a class="brown-text text-lighten-3" href="http://materializecss.com">2017</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/mbutton.js"></script>
+  </body>
+</html>
