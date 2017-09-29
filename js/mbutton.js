@@ -11246,7 +11246,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         var genres = [];
 
                         $.each(response.genres, function (key, array) {
-                            genres.push(" ● " + array.name);
+                            genres.push(" | " + array.name);
                         });
 
                         _this.setState({
@@ -11555,7 +11555,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (this.state.rating < 5.5) {
                     this.state.color = "red";
                 } else if (this.state.rating > 7) {
-                    this.state.color = "green";
+                    this.state.color = "#009688";
                 } else {
                     this.state.color = "orange";
                 }
@@ -11700,13 +11700,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'genre' },
-                                'Genre: ',
+                                'MovieMood: ',
                                 this.state.genres
                             ),
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'rating' },
-                                'Average rating:\xA0',
+                                'Rating:\xA0',
                                 _react2.default.createElement(
                                     'span',
                                     { style: {
@@ -11716,8 +11716,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     '/10\xA0'
                                 ),
                                 '(',
-                                this.state.votes,
-                                '\xA0votes)'
+                                'average votes)'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -11736,7 +11735,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'WATCH TRAILER'
+                                'Watch Trailer'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -11775,7 +11774,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'HORROR'
+                                    'SCARE ME!'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11787,7 +11786,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'FANTASY'
+                                    'MAKE-BELIEVE'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11799,7 +11798,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'COMEDY'
+                                    'FUNNY'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11811,7 +11810,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'DRAMA'
+                                    'DRAMATIC'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11823,7 +11822,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'ACTION'
+                                    'ACTION-PACKED'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11847,7 +11846,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'ADVENTURE'
+                                    'ADVENTUROUS'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11859,7 +11858,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'FAMILY'
+                                    'FAMILY-TIME!'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11871,7 +11870,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'THRILLER'
+                                    'THRILLING'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11883,7 +11882,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'MYSTERY'
+                                    'MYSTERIOUS'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11895,7 +11894,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'CRIME'
+                                    'CRIMINAL'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11931,7 +11930,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'ROMANCE'
+                                    'ROMANTIC'
                                 )
                             ),
                             _react2.default.createElement(
@@ -12145,7 +12144,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'MYSTERY'
+                                    'MYSTERIOUS'
                                 )
                             ),
                             _react2.default.createElement(
@@ -12157,7 +12156,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'CRIME'
+                                    'CRIMINAL'
                                 )
                             ),
                             _react2.default.createElement(
@@ -12193,7 +12192,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'ROMANCE'
+                                    'ROMANTIC'
                                 )
                             ),
                             _react2.default.createElement(

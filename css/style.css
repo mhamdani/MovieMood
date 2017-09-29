@@ -13,6 +13,43 @@ h4,
   font-size: 40px;
 }
 
+body .mainContainer .container .genreBtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: 0;
+  text-decoration: none;
+color: #fff;
+background-color: #26a69a;
+text-align: center;
+letter-spacing: .5px;
+-webkit-transition: .2s ease-out;
+transition: .2s ease-out;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 2px;
+border: 0px;
+}
+.genreBtn {
+  position: relative;
+cursor: pointer;
+display: inline-block;
+overflow: hidden;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+vertical-align: middle;
+z-index: 1;
+-webkit-transition: .3s ease-out;
+transition: .3s ease-out;
+}
 
 
 .light{
@@ -36,7 +73,6 @@ p {
 
 .parallax-container {
   min-height: 380px;
-  line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
@@ -273,7 +309,6 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background-color: rgba(0, 0, 0, 0.9);
       background-repeat: no-repeat;
       background-size: auto;
       padding: 10px;
@@ -289,7 +324,6 @@ body {
         font-size: 1.1rem;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
         box-sizing: border-box;
         background-repeat: no-repeat;
         background-size: cover;
@@ -361,7 +395,7 @@ body {
       display: -ms-flexbox;
       display: flex;
       height: 600px;
-      width: 25%;
+      width: 50%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -370,7 +404,6 @@ body {
           -ms-flex-align: center;
               align-items: center;
       margin-top: 20px;
-      background-color: rgba(0, 0, 0, 0.9);
       background-repeat: no-repeat;
       background-size: auto;
       border: 1px solid white; }
@@ -455,9 +488,80 @@ body {
 
 
 
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+h4,
+#more-suggestions{
+  text-align: center;
+  color: #009688 !important;
+  font-size: 40px;
+}
+
+body .mainContainer .container .genreBtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: 0;
+  text-decoration: none;
+color: #fff;
+background-color: #26a69a;
+text-align: center;
+letter-spacing: .5px;
+-webkit-transition: .2s ease-out;
+transition: .2s ease-out;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 2px;
+border: 0px;
+}
+.genreBtn {
+  position: relative;
+cursor: pointer;
+display: inline-block;
+overflow: hidden;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+vertical-align: middle;
+z-index: 1;
+-webkit-transition: .3s ease-out;
+transition: .3s ease-out;
+}
+
+.light{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.poster {
+  width: 100%;
+  height: 100%;
+}
+
+.trailerBtn{
+  border-radius: 2px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
 
 
 
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 
 @media only screen and (max-width: 940px) {
