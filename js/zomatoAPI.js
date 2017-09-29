@@ -1,17 +1,17 @@
 $(document).ready(function() {
-  apiKey = "31f5f6ce36102d71";
-  queryURL =
-    "https://api.eatstreet.com/publicapi/v1/restaurant/search-test?method=both&street-address=316+W.+Washington+Ave.+Madison,+WI";
+  var apiKey = "5fe006d31daf49c4fb1bc8bfdfd5d5d5";
 
-  // queryURL += $.param({
-  //   s: "happy",
-  //   r: "json"
-  // });
+  var queryURL = "https://developers.zomato.com/api/v2.1/search?";
+
+  queryURL += $.param({
+    entity_id: "306", //San Francisco
+    entity_type: "city"
+  });
   $.ajax({
     url: queryURL,
     method: "GET",
     headers: {
-      "X-Access-Token": "31f5f6ce36102d71"
+      "user-key": apiKey
     }
   }).done(function(response) {
     console.log(response);
