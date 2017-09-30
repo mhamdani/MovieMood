@@ -11589,7 +11589,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'MAKE-BELIEVE'
+                                    'FANTASY'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11616,30 +11616,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     'DRAMATIC'
                                 )
                             ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnActionClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn actionBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'ACTION-PACKED'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnScienceFictionClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn scienceFictionBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'SCIENCE FICTION'
-                                )
-                            ),
+
                             _react2.default.createElement(
                                 'button',
                                 { onClick: function onClick() {
@@ -11664,88 +11641,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                     'FAMILY-TIME!'
                                 )
                             ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnThrillerClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn thrillerBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'THRILLING'
-                                )
-                            )
                         )
                     ),
-                    // _react2.default.createElement(
-                    //     MediaQuery,
-                    //     { minDeviceWidth: 768 },
-                    //     _react2.default.createElement(
-                    //         'div',
-                    //         { className: 'containerCenter floatLeft' },
-                    //         _react2.default.createElement(
-                    //             'h1',
-                    //             { className: 'title' },
-                    //             this.state.title
-                    //         ),
-                    //         _react2.default.createElement('div', { className: 'poster', style: {
-                    //                 backgroundImage: 'url(' + this.state.poster + ')'
-                    //             } }),
-                    //         _react2.default.createElement(
-                    //             'p',
-                    //             { className: 'description' },
-                    //             this.state.description
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'h4',
-                    //             { className: 'genre' },
-                    //             'MovieMood: ',
-                    //             this.state.genres
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'h4',
-                    //             { className: 'rating' },
-                    //             'Rating:\xA0',
-                    //             _react2.default.createElement(
-                    //                 'span',
-                    //                 { style: {
-                    //                         color: this.state.color
-                    //                     } },
-                    //                 this.state.rating,
-                    //                 '/10\xA0'
-                    //             ),
-                    //             '(',
-                    //             'average votes)'
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'div',
-                    //             { className: 'youtube', style: {
-                    //                     display: this.state.display
-                    //                 } },
-                    //             _react2.default.createElement('iframe', { id: 'VideoPlayer', width: '700', height: '350', src: '', frameBorder: '0', allowFullScreen: 'true' }),
-                    //             _react2.default.createElement('div', { onClick: this.handleClickClose.bind(this), className: 'close' })
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'h4',
-                    //             { className: 'releaseDate' },
-                    //             'Release date: ',
-                    //             this.state.releaseDate
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'button',
-                    //             { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                    //             'Watch Trailer'
-                    //         ),
-                    //         _react2.default.createElement(
-                    //             'div',
-                    //             { style: {
-                    //                     flexDirection: "row"
-                    //                 } },
-                    //             _react2.default.createElement('img', { className: 'nextButton', src: 'images/next.png', onClick: this.handleClickRoll.bind(this) })
-                    //         )
-                    //     )
-                    // ),
                     _react2.default.createElement(
                         MediaQuery,
                         { maxDeviceWidth: 767 },
@@ -11816,30 +11713,6 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: function onClick() {
-                                        _this20.BtnActionClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile actionBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'ACTION-PACKED'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnScienceFictionClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile scienceFictionBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'SCIENCE FICTION'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
                                         _this20.BtnAdventureClick();
                                         _this20.BtnClick();
                                     }, className: 'genreBtnMobile adventureBtn' },
@@ -11864,18 +11737,6 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: function onClick() {
-                                        _this20.BtnThrillerClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile thrillerBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'THRILLING'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
                                         _this20.BtnMysteryClick();
                                         _this20.BtnClick();
                                     }, className: 'genreBtnMobile mysteryBtn' },
@@ -11883,18 +11744,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     'span',
                                     null,
                                     'MYSTERIOUS'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnCrimeClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile crimeBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'CRIMINAL'
                                 )
                             ),
                             _react2.default.createElement(
@@ -11942,46 +11791,23 @@ document.addEventListener("DOMContentLoaded", function () {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'HISTORY'
+                                    'HISTORICAL'
                                 )
                             ),
                             _react2.default.createElement(
                                 'button',
                                 { onClick: function onClick() {
-                                        _this20.BtnWarClick();
+                                        _this20.BtnScienceFictionClick();
                                         _this20.BtnClick();
-                                    }, className: 'genreBtnMobile warBtn' },
+                                    }, className: 'genreBtnMobile scienceFictionBtn' },
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'WAR'
+                                    'SCIENCE FICTION'
                                 )
                             ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnWesternClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile westernBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'WESTERN'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnTvMovieClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtnMobile tvMovieBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'TV MOVIE'
-                                )
-                            )
                         ),
+
                         _react2.default.createElement(
                             'div',
                             { style: {
@@ -12116,6 +11942,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                         backgroundRepeat: "no-repeat",
                                         backgroundPosition: "center"
                                     }, onClick: this.handleClickTrailer.bind(this) }),
+                                    //
+
+                                    //
+
                                 _react2.default.createElement('button', { style: {
                                         fontSize: "4rem",
                                         height: "200px",
@@ -12126,122 +11956,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                         backgroundSize: "cover",
                                         backgroundRepeat: "no-repeat"
                                     }, onClick: this.handleClickRoll.bind(this) })
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        MediaQuery,
-                        { minDeviceWidth: 768 },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'container floatLeft' },
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnMysteryClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn mysteryBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'MYSTERIOUS'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnCrimeClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn crimeBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'CRIMINAL'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnAnimationClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn animationBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'ANIMATION'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnMusicalClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn musicalBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'MUSICAL'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnRomanceClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn romanceBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'ROMANTIC'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnHistoryClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn historyBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'HISTORY'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnWarClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn warBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'WAR'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnWesternClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn westernBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'WESTERN'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { onClick: function onClick() {
-                                        _this20.BtnTvMovieClick();
-                                        _this20.BtnClick();
-                                    }, className: 'genreBtn tvMovieBtn' },
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'TV MOVIE'
-                                )
                             )
                         )
                     ),
@@ -12302,7 +12016,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'Watch Trailer'
+                                'Click to watch Trailer'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -12311,6 +12025,86 @@ document.addEventListener("DOMContentLoaded", function () {
                                     } },
                                 _react2.default.createElement('img', { className: 'nextButton', src: 'images/next.png', onClick: this.handleClickRoll.bind(this) })
                             )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        MediaQuery,
+                        { minDeviceWidth: 768 },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'container floatLeft' },
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnMysteryClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn mysteryBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'MYSTERIOUS'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnAnimationClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn animationBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'ANIMATION'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnMusicalClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn musicalBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'MUSICAL'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnRomanceClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn romanceBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'ROMANTIC'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnHistoryClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn historyBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'HISTORICAL'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        _this20.BtnScienceFictionClick();
+                                        _this20.BtnClick();
+                                    }, className: 'genreBtn scienceFictionBtn' },
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'SCIENCE FICTION'
+                                )
+                            ),
                         )
                     ),
                 );

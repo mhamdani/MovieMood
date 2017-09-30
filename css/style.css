@@ -423,9 +423,9 @@ line-height: 54px;
       margin-top: 20px;
       background-repeat: no-repeat;
       background-size: auto;
-      border: 1px solid white; }
-      body .mainContainer .containerCenter .title {
-        border-bottom: 1px solid #b00035;
+      /*border: 1px solid white;*/
+     }
+        body .mainContainer .containerCenter .title {
         padding: 5px;
         height: 20%;
         font-size: 1.3rem;
@@ -436,7 +436,7 @@ line-height: 54px;
         display: flex;
         padding: 10px;
         margin: 10px;
-        border-bottom: 1px solid #b00035;
+        border-bottom: 1px solid rgb(0, 150, 136);
         height: 1500px;
         overflow: auto;
         font-size: 0.9rem;
@@ -469,7 +469,7 @@ line-height: 54px;
         height: 20px; }
       body .mainContainer .containerCenter .trailerBtn {
         color: white;
-        background-color: black;
+        background-color: #26a69a;
         text-align: center;
         border-radius: 10px;
         height: 100%;
@@ -571,9 +571,6 @@ transition: .3s ease-out;
   font-size: 20px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
-
-
-
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
