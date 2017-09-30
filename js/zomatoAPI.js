@@ -50,35 +50,38 @@ $(document).ready(function() {
           console.log(response);
 
           for (var i = 0; i < 5; i++) {
-            var dining = $("<div>");
-            var diningDynamic = $(
-              "<div class= 'flickity-cell'style='width:100%;height:450px;'> "
-            );
             var imgRest =
               response.best_rated_restaurant[i].restaurant.featured_image;
-            console.log(imgRest);
+            if (imgRest != undefined) {
+              var dining = $("<div>");
+              var diningDynamic = $(
+                "<div class= 'flickity-cell'style='width:100%;height:450px;'> "
+              );
 
-            diningDynamic.html(
-              "<img src =" + imgRest + " style='width:100%;height:450px;'>"
-            );
+              console.log(imgRest);
 
-            console.log(response.best_rated_restaurant[i].restaurant.name);
-            var nameRest = response.best_rated_restaurant[i].restaurant.name;
-            var addressRest =
-              response.best_rated_restaurant[i].restaurant.location.address;
+              diningDynamic.html(
+                "<img src =" + imgRest + " style='width:100%;height:450px;'>"
+              );
 
-            var name = $("<div class= 'synopsisContainer'>");
-            var address = $("<div class= 'synopsisContainer'>");
-            name.html("<p style ='font-size:30px'>" + nameRest + "</p>");
-            // address.html("<p>" + addressRest + "</p>");
+              console.log(response.best_rated_restaurant[i].restaurant.name);
+              var nameRest = response.best_rated_restaurant[i].restaurant.name;
+              var addressRest =
+                response.best_rated_restaurant[i].restaurant.location.address;
 
-            diningDynamic.append(name);
-            // diningDynamic.append(address);
+              var name = $("<div class= 'synopsisContainer'>");
+              var address = $("<div class= 'synopsisContainer'>");
+              name.html("<p style ='font-size:30px'>" + nameRest + "</p>");
+              // address.html("<p>" + addressRest + "</p>");
 
-            dining.html("<h4>" + nameRest + "</h4>");
+              diningDynamic.append(name);
+              // diningDynamic.append(address);
 
-            // $("#dinner-suggestions").append(dining);
-            $("#dynamicInputs2").append(diningDynamic);
+              dining.html("<h4>" + nameRest + "</h4>");
+
+              // $("#dinner-suggestions").append(dining);
+              $("#dynamicInputs2").append(diningDynamic);
+            }
           }
         });
       });
