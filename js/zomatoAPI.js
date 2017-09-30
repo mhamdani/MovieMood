@@ -5,7 +5,7 @@ $(document).ready(function() {
   //Complete location for submit location
   $("#place-to-eat").geocomplete();
 
-  //Press enter button to submit location
+  // Press enter button to submit location
   $("html").keypress(function(event) {
     if (event.keyCode == 13 || event.which == 13) {
       event.preventDefault();
@@ -28,6 +28,7 @@ $(document).ready(function() {
     entity_id: "306", //San Francisco
     entity_type: "city"
   });
+
   $.ajax({
     url: queryURL,
     method: "GET",
