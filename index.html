@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/userLogin.css">
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -16,7 +17,21 @@
       <a id="logo-container" href="#" class="brand-logo">MovieMood</a>
 <!-- STELLA LOGIN SECTION START -->
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
+        <li><a href="#" id="loginBtn">Login</li>
+          <div id="myModal" class="modal">
+
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="container">
+                <p> Your Name:<input type="text" id="name-input"> </p>
+                <p> Your Email:<input type="text" id="email-input"> </p>
+              
+                <button id="submitBtn" class="btn-large waves-effect waves-light teal lighten-1"> Submit </button>
+                </div>
+              </div>
+
+            </div>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -43,6 +58,7 @@
           <a href="#" id="thrilling" class="btn-large waves-effect waves-light teal lighten-1">Thrilling</a>
           <a href="#" id="goofy" class="btn-large waves-effect waves-light teal lighten-1">Goofy</a>
           <a href="#" id="powerful" class="btn-large waves-effect waves-light teal lighten-1">Powerful</a>
+          <h3><span id="viewers"></span> people are picking their movies!</span></h3>
 
         </div>
         <br><br>
@@ -144,16 +160,25 @@
 
   <!--  Scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script src="js/jquery.smooth-scroll.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/mbutton.js"></script>
+
   //Uses zomatoAPI
   <script type="text/javascript" src="js/zomatoAPI.js"></script>
   //Access Google Maps API
   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB2DEW8_rwYpCYdSnRSRRIegJKMK3OJrVs&libraries=places"></script>
   //Auto Completes Location
   <script src="geocomplete/jquery.geocomplete.js"></script>
+
+
+  <script type="text/javascript" src="js/userLogin.js"></script>
+  <script type="text/javascript" src="js/zomatoAPI.js"></script>
+
+
   </body>
 </html>
