@@ -53,7 +53,7 @@ transition: .3s ease-out;
 
 
 .light{
-  color: white;
+  color: slategrey;
   font-size: 20px;
   text-align: center;
 }
@@ -278,7 +278,7 @@ button:focus {
 body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  background-image: url("../images/backdrop.png");
+  background-image: url("../images/pentagon.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -550,7 +550,7 @@ transition: .3s ease-out;
 }
 
 .light{
-  color: white;
+  color: slategrey;
   font-size: 20px;
   text-align: center;
 }
