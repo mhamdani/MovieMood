@@ -62,7 +62,7 @@ connectedRef.on("value", function(snap) {
 
 // When first loaded or when the connections list changes...
 connectionsRef.on("value", function(snap) {
-  console.log(snap);
+
   // Display the viewer count in the html.
   // The number of online users is the number of children in the connections list.
   $("#viewers").html(snap.numChildren());
