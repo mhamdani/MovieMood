@@ -68,9 +68,11 @@
   </div><br><br>
 
 <!-- BISHR -->
-<div class = "container" id='dinner-suggestions'>
+<div class = "container" id='restaurant-stuff'>
   <h4>Dinner In San Francisco, CA:</h4>
-  <div class = "row" id="restaurants">
+  <input type="text" id="place-to-eat" style= "color: white">
+
+  <div class = "row" id="dinner-suggestions">
 
   </div>
 </div>
@@ -79,6 +81,7 @@
 
   <div class="container" id="more-suggestions">
   <h4>More movie suggestions:</h4>
+
   </div>
 
       <!--   Icon Section   -->
@@ -165,8 +168,17 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/mbutton.js"></script>
 
+  //Uses zomatoAPI
+  <script type="text/javascript" src="js/zomatoAPI.js"></script>
+  //Access Google Maps API
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB2DEW8_rwYpCYdSnRSRRIegJKMK3OJrVs&libraries=places"></script>
+  //Auto Completes Location
+  <script src="geocomplete/jquery.geocomplete.js"></script>
+
+
   <script type="text/javascript" src="js/userLogin.js"></script>
   <script type="text/javascript" src="js/zomatoAPI.js"></script>
+
 
   </body>
 </html>
