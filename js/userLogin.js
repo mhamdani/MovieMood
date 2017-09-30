@@ -32,9 +32,12 @@ window.onclick = function(event) {
     storageBucket: "login-mood.appspot.com",
     messagingSenderId: "691695081824"
   };
-  firebase.initializeApp(config);
+
+    firebase.initializeApp(config);
 
 var database = firebase.database();
+
+
 
 var connectionsRef = database.ref("/connections");
 
@@ -65,25 +68,46 @@ connectionsRef.on("value", function(snap) {
   $("#viewers").html(snap.numChildren());
 });
 	
-var name = "";
-var email = "";
-
+	var name = "";
+	var email = "";
 
 $('#submitBtn').on("click", function(){
+
+
+
 	 event.preventDefault();
 	 name = $("#name-input").val().trim();
      email = $("#email-input").val().trim();
 
      database.ref().push({
         name: name,
-        email: email,
+        email: email
 	});
+
     modal.style.display = "none";
-});
- 
-database.ref().on("value", function(snapshot) {
+
+    $("#name-input").val("");
+	$("#email-input").val("");
+		 	 	
+ 	database.ref().on("value", function(snapshot) {
  	console.log(snapshot.val());
-    console.log(snapshot.val().name);
-    console.log(snapshot.val().email);
-});
-};
+	console.log(snapshot.val().name);
+	console.log(snapshot.val().email);
+	
+	$("#loginBtn").html("Hi " + name + "!");
+ 	});
+
+ });
+}
+
+
+
+
+// //show all objects frm firebase
+// 	database.ref().on("value", function(snapshot) {
+// 	 	console.log(snapshot.val());
+// 		// $("#name-display").html(snapshot  
+
+// 	}, function(errorObject) {
+//       console.log("Errors handled: " + errorObject.code);
+//     });
