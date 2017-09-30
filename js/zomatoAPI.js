@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log("hello");
   var apiKey = "5fe006d31daf49c4fb1bc8bfdfd5d5d5";
 
   //Complete location for submit location
