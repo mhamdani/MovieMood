@@ -11978,12 +11978,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                 { className: 'description' },
                                 this.state.description
                             ),
-                            _react2.default.createElement(
-                                'h4',
-                                { className: 'genre' },
-                                'MovieMood: ',
-                                this.state.genres
-                            ),
+                            // _react2.default.createElement(
+                            //     'h4',
+                            //     { className: 'genre' },
+                            //     'MovieMood: ',
+                            //     this.state.genres
+                            // ),
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'rating' },
@@ -12016,7 +12016,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'Click to watch Trailer'
+                                'Watch Trailer'
                             ),
                             _react2.default.createElement(
                                 'div',

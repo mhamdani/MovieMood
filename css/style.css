@@ -293,11 +293,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 1280px;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
     color: white; }
     body .mainContainer .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
+      /*display: -webkit-box;
+      display: -ms-flexbox;*/
       display: flex;
       height: 600px;
       width: 25%;
@@ -313,9 +314,9 @@ body {
       background-size: auto;
       padding: 10px;
       margin-top: 10px;
-      margin-left: 30px;
-      margin-right: 30px;
-      border-radius: 10px; }
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 5px; }
 
       body .mainContainer .container .genreBtn{
         /*background-color: black;*/
@@ -336,18 +337,18 @@ body {
           font-size: 1rem;
           text-align: center;
           /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
-letter-spacing: .5px;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  vertical-align: middle;
-  z-index: 1;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-  height: 54px;
-line-height: 54px;
+          letter-spacing: .5px;
+          cursor: pointer;
+          display: inline-block;
+          overflow: hidden;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          vertical-align: middle;
+          z-index: 1;
+          -webkit-transition: .2s ease-out;
+          transition: .2s ease-out;
+          height: 54px;
+          line-height: 54px;
           display: block;
           max-width: 100%; }
 
@@ -363,12 +364,15 @@ line-height: 54px;
         background-repeat: no-repeat;
         background-size: cover;
         color: white; }
+
         body .mainContainer .container .genreBtnMobile span {
           background-color: rgba(0, 0, 0, 0.7);
           height: 100%;
+          width: 100%;
           display: block;
           margin-left: 20px;
           padding: 10px; }
+
       body .mainContainer .container .genreBtn:hover {
         color: hotpink;
         background-image: url("../images/buttonback.jpg"); }
@@ -392,9 +396,9 @@ line-height: 54px;
       /*border: 1px solid white;*/
      }
         body .mainContainer .containerCenter .title {
-        padding: 5px;
         height: 20%;
-        font-size: 1.3rem;
+        margin-top: 10px;
+        font-size: 2.5rem;
         text-align: center; }
       body .mainContainer .containerCenter .description {
         display: -webkit-box;
@@ -405,16 +409,16 @@ line-height: 54px;
         border-bottom: 1px solid rgb(0, 150, 136);
         height: 1500px;
         overflow: auto;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 5px; }
       body .mainContainer .containerCenter .poster {
         background-size: cover;
         background-position: center;
-        width: 130px;
+        width: 200px;
         max-width: 80%;
         max-height: 90%;
-        height: 3700px;
+        height: 8700px;
         border-radius: 10px; }
       body .mainContainer .containerCenter .genre {
         height: 100px;
@@ -437,15 +441,19 @@ line-height: 54px;
         color: white;
         background-color: #26a69a;
         text-align: center;
-        border-radius: 10px;
-        height: 100%;
-        width: 70%; }
+        border-radius: 5px;
+        height: 100%; }
       body .mainContainer .containerCenter .nextButton {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin: 15px auto;
+        height: 65px;
         width: 40% !important; }
+
+        .nextButton:hover {
+        filter: brightness(50%);}
+
       body .mainContainer .containerCenter .youtube {
         z-index: 998;
         position: absolute;
@@ -527,9 +535,9 @@ transition: .3s ease-out;
 .trailerBtn{
   border-radius: 2px;
   background-color: #4CAF50; /* Green */
-  border: none;
+  /*border: none;*/
   color: white;
-  padding: 15px 32px;
+  padding: 11px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
