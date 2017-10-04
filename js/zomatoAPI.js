@@ -7,8 +7,8 @@ $(document).ready(function() {
 
   //Retrieve value from text inbox & convert to button
   // Press enter button to submit location
-  $("html").keypress(function(event) {
-    if (event.keyCode == 13 || event.which == 13) {
+  $("#place-to-eat").keypress(function(event) {
+    if (event.keyCode === 13 || event.which == 13) {
       event.preventDefault();
       // console.log($("#place-to-eat").val());
       cityName = $("#place-to-eat").val();
