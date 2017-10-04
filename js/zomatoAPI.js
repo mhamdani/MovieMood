@@ -52,28 +52,31 @@ $(document).ready(function() {
           for (var i = 0; i < 10; i++) {
             var dining = $("<div>");
             var diningDynamic = $(
-              "<div class= 'flickity-cell'style='width:100%;height:450px;'> "
+              "<div class= 'flickity-cell diningplace'style='width:100%;height:450px;'> "
             );
             var imgRest =
               response.best_rated_restaurant[i].restaurant.featured_image;
-            console.log(imgRest);
+            // console.log(imgRest);
+            var nameRest = response.best_rated_restaurant[i].restaurant.name;
+            var addressRest =
+              response.best_rated_restaurant[i].restaurant.location.address;
+            // console.log(addressRest);
+            diningDynamic.attr("address", addressRest);
+            console.log(diningDynamic.attr("address"));
             if (imgRest != "") {
               diningDynamic.html(
-                "<img src =" + imgRest + " style='width:100%;height:450px;'>"
+                "<img src =" +
+                  imgRest +
+                  " class= 'diningplace' style='width:100%;height:450px;'>"
               );
 
-              console.log(response.best_rated_restaurant[i].restaurant.name);
-              var nameRest = response.best_rated_restaurant[i].restaurant.name;
-              var addressRest =
-                response.best_rated_restaurant[i].restaurant.location.address;
+              // console.log(response.best_rated_restaurant[i].restaurant.name);
 
               var name = $("<div class= 'synopsisContainer'>");
-              var address = $("<div class= 'synopsisContainer'>");
+
               name.html("<p style ='font-size:30px'>" + nameRest + "</p>");
-              // address.html("<p>" + addressRest + "</p>");
 
               diningDynamic.append(name);
-              // diningDynamic.append(address);
 
               dining.html("<h4>" + nameRest + "</h4>");
 
@@ -81,6 +84,16 @@ $(document).ready(function() {
               $("#dynamicInputs2").append(diningDynamic);
             }
           }
+          $(".diningplace").on("click", function() {
+            mapAddress = $(this).attr("address");
+            console.log(mapAddress);
+            if (mapAddress != undefined) {
+              window.open(
+                "https://www.google.com/maps/place/" + mapAddress,
+                "_blank"
+              );
+            }
+          });
         });
       });
     }
