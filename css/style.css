@@ -321,7 +321,7 @@ body {
         /*background-color: black;*/
         height: 8vw;
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         font-size: 1.1rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -335,7 +335,7 @@ body {
           position: relative;
           font-size: 1rem;
           text-align: center;
-          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
 letter-spacing: .5px;
   cursor: pointer;
   display: inline-block;
@@ -370,43 +370,9 @@ line-height: 54px;
           margin-left: 20px;
           padding: 10px; }
       body .mainContainer .container .genreBtn:hover {
-        color: hotpink; }
-      body .mainContainer .container .horrorBtn {
+        color: hotpink;
         background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .fantasyBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .comedyBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .dramaBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .actionBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .scienceFictionBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .adventureBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .familyBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .thrillerBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .mysteryBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .crimeBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .animationBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .musicalBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .romanceBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .historyBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .warBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .westernBtn {
-        background-image: url("../images/buttonback.jpg"); }
-      body .mainContainer .container .tvMovieBtn {
-        background-image: url("../images/buttonback.jpg"); }
+
     body .mainContainer .containerCenter {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -479,8 +445,7 @@ line-height: 54px;
         display: -ms-flexbox;
         display: flex;
         margin: 15px auto;
-        width: 70%;
-        height: 30%; }
+        width: 40% !important; }
       body .mainContainer .containerCenter .youtube {
         z-index: 998;
         position: absolute;
