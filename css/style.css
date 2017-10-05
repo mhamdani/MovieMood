@@ -184,6 +184,7 @@ body select option {
 .flickity-cell{
 	position: relative;
 }
+.poster:hover,
 .flickity-cell img:hover {
 	filter: brightness(30%);
 
@@ -197,7 +198,21 @@ body select option {
 	color:white;
 	display:none;
 }
-.flickity-cell .synopsisContainer:hover img {
+
+.description-container{
+    display: none;
+    text-decoration: none;
+    color: transparent;
+    opacity: 0;
+}
+
+.description-container:hover {
+  display: block;
+  opacity: 1;
+}
+
+.poster:hover,
+.flickity-cell img {
 	filter: brightness(30%);
 }
 
