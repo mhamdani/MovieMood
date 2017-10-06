@@ -84,7 +84,7 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
+/*@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -98,7 +98,7 @@ p {
   #index-banner .section {
     top: 0;
   }
-}
+}*/
 
 .icon-block {
   padding: 0 15px;
@@ -465,6 +465,7 @@ body .mainContainer .containerCenter .poster {
   max-height: 90%;
   height: 3700px;
   border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 body .mainContainer .containerCenter .genre {
   height: 100px;
@@ -783,6 +784,9 @@ body .mainContainer .container .genreBtn {
 .trailerBtn:hover {
   filter: brightness(50%);}
 
+.genreBtn:hover {
+filter: brightness(50%);}
+
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -826,5 +830,20 @@ body {
   form {
     padding-top: 200px;
     line-height: 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
   }
 }
