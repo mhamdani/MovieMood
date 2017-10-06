@@ -229,19 +229,8 @@ body select option {
 	filter: brightness(30%);
 }
 
-<<<<<<< HEAD
-.trailerBtn:hover {
-filter: brightness(50%);}
 
 
-
-
-
-
-
-
-=======
->>>>>>> a78246d876e674e347ef2afed8e3759d49e7fe06
 /*<-------BUTTONS CSS-------->*/
 
 button:active,
@@ -330,13 +319,7 @@ button:focus {
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  background-image: url("../images/pentagon.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
 }
 body .mainContainer {
   display: -webkit-box;
@@ -508,7 +491,7 @@ body .mainContainer .containerCenter .trailerBtn {
   text-align: center;
   border-radius: 10px;
   height: 100%;
-  width: 70%;
+  width: 37%;
 }
 body .mainContainer .containerCenter .nextButton {
   display: -webkit-box;
@@ -786,13 +769,6 @@ body .mainContainer .container .genreBtn {
 }
 
 .trailerBtn {
-<<<<<<< HEAD
-  /*border-radius: 1px;*/
-=======
-  border-radius: 2px;
-  background-color: #4caf50; /* Green */
-  border: none;
->>>>>>> a78246d876e674e347ef2afed8e3759d49e7fe06
   background-color: #4CAF50; /* Green */
   /*border: none;*/
   color: white;
@@ -803,6 +779,16 @@ body .mainContainer .container .genreBtn {
   font-size: 20px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.trailerBtn:hover {
+  filter: brightness(50%);}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-image: url("../images/pentagon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 
