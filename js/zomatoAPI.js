@@ -7,8 +7,8 @@ $(document).ready(function() {
 
   //Retrieve value from text inbox & convert to button
   // Press enter button to submit location
-  $("html").keypress(function(event) {
-    if (event.keyCode == 13 || event.which == 13) {
+  $("#place-to-eat").keypress(function(event) {
+    if (event.keyCode === 13 || event.which == 13) {
       event.preventDefault();
       // console.log($("#place-to-eat").val());
       cityName = $("#place-to-eat").val();
@@ -49,37 +49,51 @@ $(document).ready(function() {
         }).done(function(response) {
           console.log(response);
 
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 10; i++) {
             var dining = $("<div>");
             var diningDynamic = $(
-              "<div class= 'flickity-cell'style='width:100%;height:450px;'> "
+              "<div class= 'flickity-cell diningplace'style='width:100%;height:450px;'> "
             );
             var imgRest =
               response.best_rated_restaurant[i].restaurant.featured_image;
-            console.log(imgRest);
-
-            diningDynamic.html(
-              "<img src =" + imgRest + " style='width:100%;height:450px;'>"
-            );
-
-            console.log(response.best_rated_restaurant[i].restaurant.name);
+            // console.log(imgRest);
             var nameRest = response.best_rated_restaurant[i].restaurant.name;
             var addressRest =
               response.best_rated_restaurant[i].restaurant.location.address;
+            // console.log(addressRest);
+            diningDynamic.attr("address", addressRest);
+            console.log(diningDynamic.attr("address"));
+            if (imgRest != "") {
+              diningDynamic.html(
+                "<img src =" +
+                  imgRest +
+                  " class= 'diningplace' style='width:100%;height:450px;'>"
+              );
 
-            var name = $("<div class= 'synopsisContainer'>");
-            var address = $("<div class= 'synopsisContainer'>");
-            name.html("<p style ='font-size:30px'>" + nameRest + "</p>");
-            // address.html("<p>" + addressRest + "</p>");
+              // console.log(response.best_rated_restaurant[i].restaurant.name);
 
-            diningDynamic.append(name);
-            // diningDynamic.append(address);
+              var name = $("<div class= 'synopsisContainer'>");
 
-            dining.html("<h4>" + nameRest + "</h4>");
+              name.html("<p style ='font-size:30px'>" + nameRest + "</p>");
 
-            // $("#dinner-suggestions").append(dining);
-            $("#dynamicInputs2").append(diningDynamic);
+              diningDynamic.append(name);
+
+              dining.html("<h4>" + nameRest + "</h4>");
+
+              // $("#dinner-suggestions").append(dining);
+              $("#dynamicInputs2").append(diningDynamic);
+            }
           }
+          $(".diningplace").on("click", function() {
+            mapAddress = $(this).attr("address");
+            console.log(mapAddress);
+            if (mapAddress != undefined) {
+              window.open(
+                "https://www.google.com/maps/place/" + mapAddress,
+                "_blank"
+              );
+            }
+          });
         });
       });
     }

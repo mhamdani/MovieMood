@@ -11835,7 +11835,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                     }, className: 'title' },
                                 this.state.title
                             ),
-                            _react2.default.createElement('div', { style: {
+                            _react2.default.createElement('div',
+                            { style: {
                                     backgroundImage: 'url(' + this.state.poster + ')',
                                     width: '400px',
                                     height: '1200px',
@@ -11844,17 +11845,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                     marginTop: "20px"
                                 } }),
                             _react2.default.createElement(
-                                'p',
-                                { style: {
-                                        fontSize: "30px",
-                                        textAlign: "center",
-                                        height: "800px",
-                                        borderBottom: "5px solid rgb(176, 0, 53)",
-                                        padding: "20px",
-                                        overflow: "auto"
-                                    } },
+                                'div',
+                                { className: 'description-container' },
                                 this.state.description
                             ),
+
                             _react2.default.createElement(
                                 'h4',
                                 { style: (_ref = {
@@ -11970,20 +11965,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 { className: 'title' },
                                 this.state.title
                             ),
-                            _react2.default.createElement('div', { className: 'poster', style: {
+                            _react2.default.createElement('div', { className: 'flickity-cell poster', style: {
                                     backgroundImage: 'url(' + this.state.poster + ')'
                                 } }),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'description' },
-                                this.state.description
-                            ),
-                            _react2.default.createElement(
-                                'h4',
-                                { className: 'genre' },
-                                'MovieMood: ',
-                                this.state.genres
-                            ),
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'rating' },
@@ -11994,10 +11978,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                             color: this.state.color
                                         } },
                                     this.state.rating,
-                                    '/10\xA0'
+                                    '/10\xA0(average votes)'
                                 ),
-                                '(',
-                                'average votes)'
+                                // '(',
+                                // 'average votes)'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -12010,13 +11994,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'releaseDate' },
-                                'Release date: ',
+                                'Released: ',
                                 this.state.releaseDate
                             ),
                             _react2.default.createElement(
                                 'button',
                                 { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'Click to watch Trailer'
+                                'Watch Trailer'
                             ),
                             _react2.default.createElement(
                                 'div',

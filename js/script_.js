@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+$(".poster").html("HELLO!")
+}
+
+_react2.default.createElement(
+		'button',
+		{ onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
+		'Watch Trailer'
+),
+
+
+
+
+
+
+
+
 var movieApp = {};
 
 movieApp.apiKey = 'ca6ea09713defa345edd21995ca6f8f8';
@@ -25,7 +41,29 @@ movieApp.getMovies = function(year){
 		// this only sends the DATA of the moviesOutput variable to displayMovies we use an arbitrary var 'item' in this case to add a new name to the data so we can loop over it using the forEach method
 		movieApp.displayMovies(moviesOutput);
 
+
 	})
+}
+
+movieApp.browserStuff = function(){
+	$('.fader').addClass('animated fadeInRight');
+	$('i').addClass('animated infinite bounce');
+	$('a').smoothScroll({
+			offset:0,
+			speed: 400
+		});
+
+
+
+	$(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+       $('.prelude h3').addClass('animated fadeInLeft');
+    }
+
+
+
+
+});
 }
 
 var movieApp = {};
@@ -53,6 +91,7 @@ movieApp.getMovies = function(year){
 		// this only sends the DATA of the moviesOutput variable to displayMovies we use an arbitrary var 'item' in this case to add a new name to the data so we can loop over it using the forEach method
 		movieApp.displayMovies(moviesOutput);
 
+
 	})
 }
 
@@ -64,12 +103,20 @@ movieApp.browserStuff = function(){
 			speed: 400
 		});
 
+
+
 	$(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
        $('.prelude h3').addClass('animated fadeInLeft');
     }
+
+
+
+
 });
 }
+
+
 
 movieApp.displayMovies = function(item){
 	console.log(item);
