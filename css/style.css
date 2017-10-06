@@ -38,6 +38,7 @@ body .mainContainer .container .genreBtn {
   box-sizing: border-box;
   border-radius: 2px;
   border: 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .genreBtn {
   position: relative;
@@ -475,13 +476,13 @@ body .mainContainer .containerCenter .genre {
 }
 body .mainContainer .containerCenter .rating {
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 20px !important;
   margin: 0;
   text-align: center;
   margin-top: 10px;
 }
 body .mainContainer .containerCenter .releaseDate {
-  font-size: 0.9rem;
+  font-size: 18px !important;
   margin: 15px;
   height: 20px;
 }
@@ -770,7 +771,7 @@ body .mainContainer .container .genreBtn {
 
 .trailerBtn {
   background-color: #4CAF50; /* Green */
-  /*border: none;*/
+  border: 2px;
   color: white;
   padding: 11px 16px;
   text-align: center;
@@ -788,7 +789,11 @@ body {
   background-image: url("../images/pentagon.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;}
+
+  .rating {
+    color: #F8F8F8 !important;
+  }
 
 /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 

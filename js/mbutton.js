@@ -11978,10 +11978,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                             color: this.state.color
                                         } },
                                     this.state.rating,
-                                    '/10\xA0'
+                                    '/10\xA0(average votes)'
                                 ),
-                                '(',
-                                'average votes)'
+                                // '(',
+                                // 'average votes)'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -11994,7 +11994,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'h4',
                                 { className: 'releaseDate' },
-                                'Release date: ',
+                                'Released: ',
                                 this.state.releaseDate
                             ),
                             _react2.default.createElement(
