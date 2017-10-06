@@ -145,7 +145,7 @@ html {
 }
 
 a:hover {
-  color: hotpink;
+  color: hotpink !important;
 }
 ul:hover{
   color: hotpink;
