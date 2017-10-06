@@ -5,13 +5,13 @@
  *
  * Made By MaterializeCSS.com
  */
- 
+
 img[src="http://maps.gstatic.com/mapfiles/google_white.png"] {
     display: none;
 }
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: red;
+  color: grey;
 }
 
 h4,
