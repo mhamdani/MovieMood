@@ -2124,7 +2124,7 @@
 }
 
 .white {
-  background-image: url(../images/pentagon.png);
+  background-color: #FFFFFF !important;
 }
 
 .white-text {
@@ -3509,6 +3509,8 @@ nav ul a span.badge {
 .row .col.s12 {
   width: 100%;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 15px;
   left: auto;
   right: auto;
 }
@@ -4490,9 +4492,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   line-height: 110%;
-  margin: 2.1rem 0 1.68rem 0;
+  margin: 6.5rem 0 1rem 0;
 }
 
 h2 {
