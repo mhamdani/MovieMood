@@ -216,6 +216,8 @@ body select option {
 	filter: brightness(30%);
 }
 
+.trailerBtn:hover {
+filter: brightness(50%);}
 
 
 
@@ -547,8 +549,8 @@ transition: .3s ease-out;
   height: 100%;
 }
 
-.trailerBtn{
-  border-radius: 2px;
+.trailerBtn {
+  /*border-radius: 1px;*/
   background-color: #4CAF50; /* Green */
   /*border: none;*/
   color: white;
