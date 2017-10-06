@@ -1,16 +1,17 @@
-
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("loginBtn");
 
+var closModal = document.getElementsByClassName("close")[0];
+
 // var subBtn = document.getElementById("submitBtn");
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
-    modal.style.display = "block";
-}
+  modal.style.display = "block";
+};
 
 // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function(event) {
@@ -18,26 +19,23 @@ btn.onclick = function() {
 //         modal.style.display = "none";
 //     };
 
-
-// subBtn.onclick = function(event) {
-// 	modal.style.display = "none";
-// 	}
+closModal.onclick = function() {
+  modal.style.display = "none";
+};
 
 //firebase
-  var config = {
-    apiKey: "AIzaSyChtc5y8fKeLNnMT-tt1B9T8ZR88mcxycc",
-    authDomain: "login-mood.firebaseapp.com",
-    databaseURL: "https://login-mood.firebaseio.com",
-    projectId: "login-mood",
-    storageBucket: "login-mood.appspot.com",
-    messagingSenderId: "691695081824"
-  };
+var config = {
+  apiKey: "AIzaSyChtc5y8fKeLNnMT-tt1B9T8ZR88mcxycc",
+  authDomain: "login-mood.firebaseapp.com",
+  databaseURL: "https://login-mood.firebaseio.com",
+  projectId: "login-mood",
+  storageBucket: "login-mood.appspot.com",
+  messagingSenderId: "691695081824"
+};
 
-    firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 var database = firebase.database();
-
-
 
 var connectionsRef = database.ref("/connections");
 
@@ -48,10 +46,8 @@ var connectedRef = database.ref(".info/connected");
 
 // When the client's connection state changes...
 connectedRef.on("value", function(snap) {
-
   // If they are connected..
   if (snap.val()) {
-
     // Add user to the connections list.
     var con = connectionsRef.push(true);
 
@@ -62,51 +58,50 @@ connectedRef.on("value", function(snap) {
 
 // When first loaded or when the connections list changes...
 connectionsRef.on("value", function(snap) {
-
   // Display the viewer count in the html.
   // The number of online users is the number of children in the connections list.
   $("#viewers").html(snap.numChildren());
 });
-	
-	var name = "";
-	var email = "";
 
-$('#submitBtn').on("click", function(){
+var name = "";
+var email = "";
 
+$("#submitBtn").on("click", function() {
+  if (email.indexOf("@") === -1) {
+    console.log("have to be a real email");
+  } else {
+    event.preventDefault();
+    name = $("#name-input")
+      .val()
+      .trim();
+    email = $("#email-input")
+      .val()
+      .trim();
 
-
-	 event.preventDefault();
-	 name = $("#name-input").val().trim();
-     email = $("#email-input").val().trim();
-
-     database.ref().push({
-        name: name,
-        email: email
-	});
+    database.ref().push({
+      name: name,
+      email: email
+    });
 
     modal.style.display = "none";
 
     $("#name-input").val("");
-	$("#email-input").val("");
-		 	 	
- 	database.ref().on("value", function(snapshot) {
- 	console.log(snapshot.val());
-	console.log(snapshot.val().name);
-	console.log(snapshot.val().email);
-	
-	$("#loginBtn").html("Hi " + name + "!");
- 	});
+    $("#email-input").val("");
 
- });
+    database.ref().on("value", function(snapshot) {
+      console.log(snapshot.val());
+      console.log(snapshot.val().name);
+      console.log(snapshot.val().email);
 
-
-
-
+      $("#loginBtn").html("Hi " + name + "!");
+    });
+  }
+});
 
 // //show all objects frm firebase
 // 	database.ref().on("value", function(snapshot) {
 // 	 	console.log(snapshot.val());
-// 		// $("#name-display").html(snapshot  
+// 		// $("#name-display").html(snapshot
 
 // 	}, function(errorObject) {
 //       console.log("Errors handled: " + errorObject.code);
