@@ -20,55 +20,48 @@
 <!-- STELLA -->
       <ul class="right hide-on-med-and-down">
         <li><a href="#" id="loginBtn">Login</li>
-          <div id="myModal" class="modal">
+<!--       <div class ="row"> <input type="text" name="username" placeholder="Please place your name here">  --> <!-- <input type="password" name="pword">
+<input type="button" value="Check In" name="Submit" onclick= "validate()"> -->
+</p>
 
 
-              <!-- Modal content -->
-              <div class="modal-content">
-<!--                 <div class="container">
+     <!--            <div class="container">
                 <p> Your Name:<input type="text" id="name-input"> </p>
                 <p> Your Email:<input type="text" id="email-input"> </p>
                 <button id="submitBtn" class="btn-large waves-effect waves-light teal lighten-1"> Submit </button>
                 </div> -->
 
-
-
+          <div id="myModal" class="modal">
+              <div class="modal-content">
+                    <span class="close">&times;</span>
                   <form class="form-horizontal">
                     <div class="form-group">
                       <label for="inputEmail3" class="col-sm-2 control-label">Your name: </label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="name-input" placeholder="John Doe">
+                        <input type="text" class="form-control" id="name-input" placeholder="John Doe">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputPassword3" class="col-sm-2 control-label">Your email: </label>
-                      <div class="col-sm-10">
+                      <div class="col-sm-10" >
                         <input type="email" class="form-control" id="email-input" placeholder="john.doe@gmail.com">
                       </div>
                     </div>
-<!--                     <div class="form-group">
-                      <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        </div>
-                      </div>
-                    </div> -->
+
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10">
                         <button id="submitBtn" class="btn-large waves-effect waves-light teal lighten-1" type="submit">Submit</button>
                       </div>
                     </div>
                   </form>
-              </div>
-            </div>
+<!--               </div>
+            </div> -->
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
+<!--       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </ul> -->
+<!--       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
     </div>
   </nav>
 <!-- STELLA -->
@@ -82,6 +75,7 @@
         <h1 class="header center teal-text text-lighten-2">Get movie recommendations</h1>
         <div class="row center">
           <h5 class="header col s12 light">Click on a mood button to generate your movie recommendations!</h5>
+          <h6><span id="viewers"></span> people are picking their movies! </span></h6>
         </div>
         <div class="row center">
           <div id="app"></div>

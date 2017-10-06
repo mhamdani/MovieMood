@@ -5,6 +5,8 @@ var modal = document.getElementById('myModal');
 // Get the button that opens the modal
 var btn = document.getElementById("loginBtn");
 
+var closModal = document.getElementsByClassName("close")[0];
+
 // var subBtn = document.getElementById("submitBtn");
 
 // When the user clicks the button, open the modal 
@@ -19,9 +21,10 @@ btn.onclick = function() {
 //     };
 
 
-// subBtn.onclick = function(event) {
-// 	modal.style.display = "none";
-// 	}
+closModal.onclick = function() {
+    modal.style.display = "none";
+}
+
 
 //firebase
   var config = {
@@ -71,34 +74,36 @@ connectionsRef.on("value", function(snap) {
 	var name = "";
 	var email = "";
 
-$('#submitBtn').on("click", function(){
 
+// if (indexOf ('@') === -1) {
+// 	console.log("have to be a real email");
+// }else{
 
+	$('#submitBtn').on("click", function(){
+		 event.preventDefault();
+		 name = $("#name-input").val().trim();
+	     email = $("#email-input").val().trim();
 
-	 event.preventDefault();
-	 name = $("#name-input").val().trim();
-     email = $("#email-input").val().trim();
+	     database.ref().push({
+	        name: name,
+	        email: email
+		});
 
-     database.ref().push({
-        name: name,
-        email: email
-	});
+	    modal.style.display = "none";
 
-    modal.style.display = "none";
+	    $("#name-input").val("");
+		$("#email-input").val("");
+			 	 	
+	 	database.ref().on("value", function(snapshot) {
+	 	console.log(snapshot.val());
+		console.log(snapshot.val().name);
+		console.log(snapshot.val().email);
+		
+		$("#loginBtn").html("Hi " + name + "!");
+	 	});
 
-    $("#name-input").val("");
-	$("#email-input").val("");
-		 	 	
- 	database.ref().on("value", function(snapshot) {
- 	console.log(snapshot.val());
-	console.log(snapshot.val().name);
-	console.log(snapshot.val().email);
-	
-	$("#loginBtn").html("Hi " + name + "!");
  	});
-
- });
-
+// }
 
 
 

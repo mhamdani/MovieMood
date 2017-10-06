@@ -24,3 +24,23 @@
     width: 80%;
 
 }
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*.form-horizontal {
+        padding: 20px 20px 200px;
+}*/
