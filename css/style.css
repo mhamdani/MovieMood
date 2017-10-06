@@ -195,6 +195,7 @@ body select option {
 .flickity-cell {
   position: relative;
 }
+.poster:hover,
 .flickity-cell img:hover {
   filter: brightness(30%);
 }
@@ -207,8 +208,25 @@ body select option {
   color: white;
   display: none;
 }
+
 .flickity-cell .synopsisContainer:hover img {
   filter: brightness(30%);
+
+.description-container{
+    display: none;
+    text-decoration: none;
+    color: transparent;
+    opacity: 0;
+}
+
+.description-container:hover {
+  display: block;
+  opacity: 1;
+}
+
+.poster:hover,
+.flickity-cell img {
+	filter: brightness(30%);
 }
 
 /*<-------BUTTONS CSS-------->*/
@@ -503,6 +521,194 @@ body .mainContainer .containerCenter .close {
   top: 0;
   right: 10px;
 }
+  background-attachment: fixed; }
+  body .mainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    color: white; }
+    body .mainContainer .container {
+      /*display: -webkit-box;
+      display: -ms-flexbox;*/
+      display: flex;
+      height: 600px;
+      width: 25%;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 5px; }
+
+      body .mainContainer .container .genreBtn{
+        /*background-color: black;*/
+        height: 8vw;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        box-sizing: border-box;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white; }
+
+        body .mainContainer .container .genreBtn span {
+          /*background-color: rgba(0, 0, 0, 0.6);*/
+          position: relative;
+          font-size: 1rem;
+          text-align: center;
+          /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+          letter-spacing: .5px;
+          cursor: pointer;
+          display: inline-block;
+          overflow: hidden;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          vertical-align: middle;
+          z-index: 1;
+          -webkit-transition: .2s ease-out;
+          transition: .2s ease-out;
+          height: 54px;
+          line-height: 54px;
+          display: block;
+          max-width: 100%; }
+
+      body .mainContainer .container .genreBtnMobile {
+        background-color: black;
+        height: 150px;
+        width: 100%;
+        font-size: 4rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white; }
+
+        body .mainContainer .container .genreBtnMobile span {
+          background-color: rgba(0, 0, 0, 0.7);
+          height: 100%;
+          width: 100%;
+          display: block;
+          margin-left: 20px;
+          padding: 10px; }
+
+      body .mainContainer .container .genreBtn:hover {
+        color: hotpink;
+        background-image: url("../images/buttonback.jpg"); }
+
+    body .mainContainer .containerCenter {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 600px;
+      width: 50%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20px;
+      background-repeat: no-repeat;
+      background-size: auto;
+      /*border: 1px solid white;*/
+     }
+        body .mainContainer .containerCenter .title {
+        height: 20%;
+        margin-top: 10px;
+        font-size: 2.5rem;
+        text-align: center; }
+      body .mainContainer .containerCenter .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        border-bottom: 1px solid rgb(0, 150, 136);
+        height: 1500px;
+        overflow: auto;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 5px; }
+      body .mainContainer .containerCenter .poster {
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        max-width: 80%;
+        max-height: 90%;
+        height: 8700px;
+        border-radius: 10px; }
+      body .mainContainer .containerCenter .genre {
+        height: 100px;
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px; }
+      body .mainContainer .containerCenter .rating {
+        height: 40px;
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: center;
+        margin-top: 10px; }
+      body .mainContainer .containerCenter .releaseDate {
+        font-size: 0.9rem;
+        margin: 15px;
+        height: 20px; }
+      body .mainContainer .containerCenter .trailerBtn {
+        color: white;
+        background-color: #26a69a;
+        text-align: center;
+        border-radius: 5px;
+        height: 100%; }
+      body .mainContainer .containerCenter .nextButton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 15px auto;
+        height: 65px;
+        width: 40% !important; }
+
+        .nextButton:hover {
+        filter: brightness(50%);}
+
+      body .mainContainer .containerCenter .youtube {
+        z-index: 998;
+        position: absolute;
+        top: 25%;
+        left: 25%; }
+      body .mainContainer .containerCenter .close {
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/close.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        right: 10px; }
 
 .floatLeft {
   float: left;
@@ -570,8 +776,10 @@ body .mainContainer .container .genreBtn {
   border-radius: 2px;
   background-color: #4caf50; /* Green */
   border: none;
+  background-color: #4CAF50; /* Green */
+  /*border: none;*/
   color: white;
-  padding: 15px 32px;
+  padding: 11px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

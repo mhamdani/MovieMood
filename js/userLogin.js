@@ -13,10 +13,10 @@ btn.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    };
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     };
 
 
 // subBtn.onclick = function(event) {
@@ -62,7 +62,7 @@ connectedRef.on("value", function(snap) {
 
 // When first loaded or when the connections list changes...
 connectionsRef.on("value", function(snap) {
-  console.log(snap);
+
   // Display the viewer count in the html.
   // The number of online users is the number of children in the connections list.
   $("#viewers").html(snap.numChildren());
@@ -98,7 +98,7 @@ $('#submitBtn').on("click", function(){
  	});
 
  });
-}
+
 
 
 
