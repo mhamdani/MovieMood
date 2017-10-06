@@ -14,6 +14,10 @@ img[src="http://maps.gstatic.com/mapfiles/google_white.png"] {
   color: grey;
 }
 
+#viewers {
+  color: #4db6ac;
+}
+
 h4,
 #more-suggestions {
   text-align: center;

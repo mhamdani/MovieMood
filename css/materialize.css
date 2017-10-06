@@ -2123,8 +2123,10 @@
   color: #000000 !important;
 }
 
+/*entire background color!*/
 .white {
   background-color: #FFFFFF !important;
+  opacity: 0.98;
 }
 
 .white-text {
@@ -2371,7 +2373,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+  color: grey;
   /* 1 */
   font: inherit;
   /* 2 */
@@ -3513,6 +3515,7 @@ nav ul a span.badge {
   margin-bottom: 15px;
   left: auto;
   right: auto;
+  color: slategrey;
 }
 
 .row .col.offset-s1 {
@@ -4525,6 +4528,7 @@ h6 {
   font-size: 1rem;
   line-height: 110%;
   margin: 0.5rem 0 0.4rem 0;
+  color: slategrey;
 }
 
 em {
