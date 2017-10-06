@@ -100,4 +100,5 @@ $(function(){
 	movieApp.init();
 
 });
+
 });

@@ -5,13 +5,17 @@
  *
  * Made By MaterializeCSS.com
  */
- 
+
 img[src="http://maps.gstatic.com/mapfiles/google_white.png"] {
     display: none;
 }
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: red;
+  color: grey;
+}
+
+#viewers {
+  color: #4db6ac;
 }
 
 h4,
@@ -443,10 +447,11 @@ body .mainContainer .containerCenter {
   /*border: 1px solid white;*/
 }
 body .mainContainer .containerCenter .title {
-  padding: 5px;
+  /*padding: 5px;*/
   height: 20%;
   font-size: 1.3rem;
   text-align: center;
+  color: #F8F8F8 !important;
 }
 body .mainContainer .containerCenter .description {
   display: -webkit-box;
@@ -481,7 +486,7 @@ body .mainContainer .containerCenter .genre {
 }
 body .mainContainer .containerCenter .rating {
   height: 40px;
-  font-size: 20px !important;
+  font-size: 18px !important;
   margin: 0;
   text-align: center;
   margin-top: 10px;
@@ -563,7 +568,7 @@ body .mainContainer .containerCenter .close {
       body .mainContainer .container .genreBtn{
         /*background-color: black;*/
         height: 8vw;
-        width: 100%;
+        width: 88%;
         margin-bottom: 20px;
         font-size: 1.1rem;
         display: -webkit-box;
@@ -576,7 +581,7 @@ body .mainContainer .containerCenter .close {
         body .mainContainer .container .genreBtn span {
           /*background-color: rgba(0, 0, 0, 0.6);*/
           position: relative;
-          font-size: 1rem;
+          font-size: 18px;
           text-align: center;
           /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
           letter-spacing: .5px;
@@ -640,6 +645,7 @@ body .mainContainer .containerCenter .close {
         body .mainContainer .containerCenter .title {
         height: 20%;
         margin-top: 10px;
+        margin-bottom: auto;
         font-size: 2.5rem;
         text-align: center; }
       body .mainContainer .containerCenter .description {
