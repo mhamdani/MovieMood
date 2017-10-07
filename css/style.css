@@ -144,6 +144,12 @@ html {
   font-size: 15px;
 }
 
+a:hover {
+  color: hotpink !important;
+}
+ul:hover{
+  color: hotpink;
+}
 .wrapper {
   height: 100vh;
   background-image: url(assets/herovader.jpg);
