@@ -13,12 +13,6 @@ btn.onclick = function() {
   modal.style.display = "block";
 };
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     };
-
 closModal.onclick = function() {
   modal.style.display = "none";
 };
@@ -66,10 +60,12 @@ connectionsRef.on("value", function(snap) {
 var name = "";
 var email = "";
 
+
 $("#submitBtn").on("click", function() {
-  if (email.indexOf("@") === -1) {
-    console.log("have to be a real email");
-  } else {
+ // if (email.indexOf("@") === -1) {
+ //    console.log("have to be a real email");
+
+ //  } else {
     event.preventDefault();
     name = $("#name-input")
       .val()
@@ -94,8 +90,9 @@ $("#submitBtn").on("click", function() {
       console.log(snapshot.val().email);
 
       $("#loginBtn").html("Hi " + name + "!");
-    });
-  }
+    	});
+	// }
+
 });
 
 // //show all objects frm firebase
