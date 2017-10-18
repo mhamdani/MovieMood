@@ -12000,7 +12000,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             _react2.default.createElement(
                                 'button',
                                 { onClick: this.handleClickTrailer.bind(this), className: 'trailerBtn' },
-                                'Watch Trailer'
+                                'Trailer'
                             ),
                             _react2.default.createElement(
                                 'div',

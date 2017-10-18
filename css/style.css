@@ -509,6 +509,7 @@ body .mainContainer .containerCenter .trailerBtn {
   border-radius: 10px;
   height: 100%;
   width: 37%;
+  font-weight: 300;
 }
 body .mainContainer .containerCenter .nextButton {
   display: -webkit-box;
